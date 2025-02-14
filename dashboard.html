@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resposnive.css">
+    <link rel="stylesheet" href="css/sidebar-style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <aside>
+        <a href="#" data-resize-btn class="logo">
+            <img src="./images/Logo.svg" alt="">
+
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./dashboard.html" class="active">
+                        <img src="./images/home.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Users.html">
+                        <img src="./images/performence-overview.svg" alt="">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/calendar.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/book.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/task.svg" alt="">
+                        <span>Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/learning.svg" alt="">
+                        <span>Collections</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/settings.svg" alt="">
+                        <span>Downloads</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="top-bar">
+            <div class="tab-left-side">
+                <div class="page-name">
+                    <h6>Admin Home</h6>
+                </div>
+            </div>
+
+
+            <div class="user-notificationbell">
+                <div class="search-input-div">
+                    <input type="search" placeholder="search" class="search-input">
+                    <img src="./images/Search_Magnifying_Glass.svg" alt="" class="search-img">
+                </div>
+                <div class="notification-bell">
+                    <img src="images/share.svg" alt="">
+                </div>
+
+                <div class="user-img">
+                    <img src="images/notification.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="inner-content">
+            <div class="dashboard-top-row">
+
+                <div></div>
+
+                <div class="tab-select">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="false" tabindex="-1">Month</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false" tabindex="-1">Quarter</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false" tabindex="-1">Year</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter-report">
+                    <div class="create-report">
+                        <button class="filter-btn"><img src="./images/Filter.svg" alt="">Filter</button>
+                    </div>
+
+                    <div class="create-report">
+                        <button><img src="./images/download-pdf.svg" alt="">Create Report</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="dashboard-number-row">
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/total-users.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Total Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>240</h4>
+                                <!-- <span class="cr">Crore</span> -->
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/active-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Active Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>200</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/inactive-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Inactive Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>40</h4>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/pending-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Pending Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-bottom-grpah d-flex mt-4">
+                        <div class="admin-left">
+                            <div class="add-user custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/add-user.svg" alt="">
+                                        </div>
+                                        <h6>Add a User</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>Manage</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Email(s)</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Assign Role</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Access</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div class="red-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pending-approve custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Pending Approvals</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>View All</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="pending-box d-flex justify-content-between align-items-center">
+                                    <div class="pending-left">
+                                        <h5>User Name</h5>
+                                        <h6>Admin Access</h6>
+                                    </div>
+
+                                    <div class="pending-btn">
+                                        <button type="button" class="grey-btn">Decline</button>
+                                        <button type="button" class="red-btn">Accept</button>
+                                    </div>
+                                </div>
+
+                                <div class="pending-box d-flex justify-content-between align-items-center">
+                                    <div class="pending-left">
+                                        <h5>User Name</h5>
+                                        <h6>Admin Access</h6>
+                                    </div>
+
+                                    <div class="pending-btn">
+                                        <button type="button" class="grey-btn">Decline</button>
+                                        <button type="button" class="red-btn">Accept</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="admin-middle">
+                            <div class="user-stats custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/arrow-icon-big.svg" alt="">
+                                        </div>
+                                        <h6>User Stats</h6>
+                                    </div>
+                                </div>
+
+                                <div class="targetCard">
+                                    <div class="salesBox">
+                                        <canvas id="targetmonth"></canvas>
+                                    </div>
+
+                                    <!-- <div class="graph-custom-text">
+                                        <p>Total Nudges</p>
+                                    </div> -->
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Overall Login Activity</h6>
+                                    <h2>80%</h2>
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Mobile Activity</h6>
+                                    <h2>20%</h2>
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Inactivity</h6>
+                                    <h2>0.75%</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-right">
+                            <div class="recent-activity custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Recent Activity</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>View All</span>
+                                    </div>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p>Recent Login Activity</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p class="black">RBH Login | 2.00pm | Mumbai, Maharashtra</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p class="black">RBH Login | 2.00pm | Mumbai, Maharashtra</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p>Recent Login Activity</p>
+                                </div>
+                            </div>
+
+                            <div class="login-status custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Login Status</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <img src="./images/expand-icon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="kpi-graph">
+                                    <div class="kpiCard">
+                                        <div class="logingraph">
+                                            <canvas id="mykpiMonthgraph"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+                                    <div class="login-legend-line"></div>
+                                    <div class="login-legend">Logins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <div class="dashboard-number-row">
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/total-users.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Total Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>240</h4>
+                                <!-- <span class="cr">Crore</span> -->
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/active-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Active Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>200</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/inactive-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Inactive Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>40</h4>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/pending-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Pending Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-bottom-grpah d-flex mt-4">
+                        <div class="admin-left">
+                            <div class="add-user custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/add-user.svg" alt="">
+                                        </div>
+                                        <h6>Add a User</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>Manage</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Email(s)</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Assign Role</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Access</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div class="red-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pending-approve custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Pending Approvals</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>View All</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="pending-box d-flex justify-content-between align-items-center">
+                                    <div class="pending-left">
+                                        <h5>User Name</h5>
+                                        <h6>Admin Access</h6>
+                                    </div>
+
+                                    <div class="pending-btn">
+                                        <button type="button" class="grey-btn">Decline</button>
+                                        <button type="button" class="red-btn">Accept</button>
+                                    </div>
+                                </div>
+
+                                <div class="pending-box d-flex justify-content-between align-items-center">
+                                    <div class="pending-left">
+                                        <h5>User Name</h5>
+                                        <h6>Admin Access</h6>
+                                    </div>
+
+                                    <div class="pending-btn">
+                                        <button type="button" class="grey-btn">Decline</button>
+                                        <button type="button" class="red-btn">Accept</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="admin-middle">
+                            <div class="user-stats custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/arrow-icon-big.svg" alt="">
+                                        </div>
+                                        <h6>User Stats</h6>
+                                    </div>
+                                </div>
+
+                                <div class="targetCard">
+                                    <div class="salesBox">
+                                        <canvas id="targetquarter"></canvas>
+                                    </div>
+
+                                    <!-- <div class="graph-custom-text">
+                                        <p>Total Nudges</p>
+                                    </div> -->
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Overall Login Activity</h6>
+                                    <h2>80%</h2>
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Mobile Activity</h6>
+                                    <h2>20%</h2>
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Inactivity</h6>
+                                    <h2>0.75%</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-right">
+                            <div class="recent-activity custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Recent Activity</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>View All</span>
+                                    </div>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p>Recent Login Activity</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p class="black">RBH Login | 2.00pm | Mumbai, Maharashtra</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p class="black">RBH Login | 2.00pm | Mumbai, Maharashtra</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p>Recent Login Activity</p>
+                                </div>
+                            </div>
+
+                            <div class="login-status custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Login Status</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <img src="./images/expand-icon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="kpi-graph">
+                                    <div class="kpiCard">
+                                        <div class="logingraph">
+                                            <canvas id="mykpiquarter"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+                                    <div class="login-legend-line"></div>
+                                    <div class="login-legend">Logins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <div class="dashboard-number-row">
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/total-users.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Total Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>240</h4>
+                                <!-- <span class="cr">Crore</span> -->
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/active-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Active Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>200</h4>
+                                <img src="./images/upwardtrend.svg" alt="">
+                                <spa class="num green">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/inactive-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Inactive Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>40</h4>
+                                <img src="./images/downwardtrend.svg" alt="">
+                                <spa class="num">+2.7%
+                                </spa>
+                            </div>
+                        </div>
+
+                        <div class="num-box custom-div">
+                            <div class="icon-heading">
+                                <div class="num-icon">
+                                    <img src="./images/pending-user.svg" alt="">
+                                </div>
+                                <div class="num-heading">
+                                    <h6>Pending Users</h6>
+                                </div>
+                            </div>
+
+                            <div class="number">
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admin-bottom-grpah d-flex mt-4">
+                        <div class="admin-left">
+                            <div class="add-user custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/add-user.svg" alt="">
+                                        </div>
+                                        <h6>Add a User</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>Manage</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Email(s)</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Assign Role</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="form-input-label">
+                                    <label for="">Access</label>
+                                    <input type="text">
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <div class="red-btn">Add</div>
+                                </div>
+                            </div>
+
+                            <div class="pending-approve custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Pending Approvals</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>View All</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="pending-box d-flex justify-content-between align-items-center">
+                                    <div class="pending-left">
+                                        <h5>User Name</h5>
+                                        <h6>Admin Access</h6>
+                                    </div>
+
+                                    <div class="pending-btn">
+                                        <button type="button" class="grey-btn">Decline</button>
+                                        <button type="button" class="red-btn">Accept</button>
+                                    </div>
+                                </div>
+
+                                <div class="pending-box d-flex justify-content-between align-items-center">
+                                    <div class="pending-left">
+                                        <h5>User Name</h5>
+                                        <h6>Admin Access</h6>
+                                    </div>
+
+                                    <div class="pending-btn">
+                                        <button type="button" class="grey-btn">Decline</button>
+                                        <button type="button" class="red-btn">Accept</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="admin-middle">
+                            <div class="user-stats custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/arrow-icon-big.svg" alt="">
+                                        </div>
+                                        <h6>User Stats</h6>
+                                    </div>
+                                </div>
+
+                                <div class="targetCard">
+                                    <div class="salesBox">
+                                        <canvas id="targetyear"></canvas>
+                                    </div>
+
+                                    <!-- <div class="graph-custom-text">
+                                        <p>Total Nudges</p>
+                                    </div> -->
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Overall Login Activity</h6>
+                                    <h2>80%</h2>
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Mobile Activity</h6>
+                                    <h2>20%</h2>
+                                </div>
+
+                                <div class="stats-box">
+                                    <h6>Inactivity</h6>
+                                    <h2>0.75%</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-right">
+                            <div class="recent-activity custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Recent Activity</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <span>View All</span>
+                                    </div>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p>Recent Login Activity</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p class="black">RBH Login | 2.00pm | Mumbai, Maharashtra</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p class="black">RBH Login | 2.00pm | Mumbai, Maharashtra</p>
+                                </div>
+
+                                <div class="activity-box">
+                                    <p>Recent Login Activity</p>
+                                </div>
+                            </div>
+
+                            <div class="login-status custom-div">
+                                <div class="box-top-bar">
+                                    <div class="top-bar-left">
+                                        <div class="icon">
+                                            <img src="./images/pending-icon.svg" alt="">
+                                        </div>
+                                        <h6>Login Status</h6>
+                                    </div>
+
+                                    <div class="top-bar-right">
+                                        <img src="./images/expand-icon.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="kpi-graph">
+                                    <div class="kpiCard">
+                                        <div class="logingraph">
+                                            <canvas id="mykpiyear"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+                                    <div class="login-legend-line"></div>
+                                    <div class="login-legend">Logins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const targetDatamonth = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [75, 25],
+                backgroundColor: [
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 3,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountmonth = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsmonth = {
+            id: 'targetcountsmonth',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('82%', xCoor, yCoor);
+            }
+        }
+
+        const configTargetmonth = {
+            type: 'doughnut',
+            data: targetDatamonth,
+            options: targetcountmonth,
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: [targetcountsmonth]
+
+
+        };
+
+        const targetmonth = new Chart(
+            document.getElementById('targetmonth'),
+            configTargetmonth
+        );
+
+
+    </script>
+
+    <script>
+        const targetDataquarter = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [75, 25],
+                backgroundColor: [
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 3,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountquarter = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsquarter = {
+            id: 'targetcountsquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('20%', xCoor, yCoor);
+            }
+        }
+
+        const configTargetquarter = {
+            type: 'doughnut',
+            data: targetDataquarter,
+            options: targetcountquarter,
+            plugins: [targetcountsquarter]
+
+
+        };
+
+        const targetquarter = new Chart(
+            document.getElementById('targetquarter'),
+            configTargetquarter
+        );
+
+
+    </script>
+
+    <script>
+        const targetDatayear = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [75, 25],
+                backgroundColor: [
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 3,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountyear = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsyear = {
+            id: 'targetcountsyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('75%', xCoor, yCoor);
+            }
+        }
+
+        const configTargetyear = {
+            type: 'doughnut',
+            data: targetDatayear,
+            options: targetcountyear,
+            plugins: [targetcountsyear]
+
+
+        };
+
+        const targetyear = new Chart(
+            document.getElementById('targetyear'),
+            configTargetyear
+        );
+
+
+    </script>
+
+    <script>
+        // Sample datasets
+        const kpitrendmonthdata = {
+            kpitrendmonth1: [
+                { label: "Login", data: [5, 30, 25, 20], borderColor: "rgba(27, 101, 166, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiMonthgraph = document.getElementById("mykpiMonthgraph").getContext("2d");
+        let chart = new Chart(mykpiMonthgraph, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendmonthdata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        ticks: {
+                            display: false // Hides only the labels of the x-axis 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        });
+
+        // Event listener to change dataset
+        document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+            const selectedDataset = this.value;
+            chart.data.datasets = kpitrendmonthdata[selectedDataset];
+            chart.update();
+        });
+    </script>
+
+    <script>
+        // Sample datasets
+        const kpitrendquarterdata = {
+            kpitrendmonth1: [
+                { label: "Login", data: [5, 3, 25, 20], borderColor: "rgba(27, 101, 166, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiquarter = document.getElementById("mykpiquarter").getContext("2d");
+        let chartquarter = new Chart(mykpiquarter, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendquarterdata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        ticks: {
+                            display: false // Hides only the labels of the x-axis 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        });
+
+        // Event listener to change dataset
+        document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+            const selectedDataset = this.value;
+            chartquarter.data.datasets = kpitrendmonthdata[selectedDataset];
+            chartquarter.update();
+        });
+    </script>
+
+    <script>
+        // Sample datasets
+        const kpitrendyeardata = {
+            kpitrendmonth1: [
+                { label: "Login", data: [5, 15, 5, 20], borderColor: "rgba(27, 101, 166, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiyear = document.getElementById("mykpiyear").getContext("2d");
+        let chartyear = new Chart(mykpiyear, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendyeardata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        ticks: {
+                            display: false // Hides only the labels of the x-axis 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        });
+
+        // Event listener to change dataset
+        document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+            const selectedDataset = this.value;
+            chartyear.data.datasets = kpitrendmonthdata[selectedDataset];
+            chartyear.update();
+        });
+    </script>
+
+    <script>
+        const resizeBtn = document.querySelector("[data-resize-btn]");
+
+        resizeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.body.classList.toggle("sb-expanded");
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

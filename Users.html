@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resposnive.css">
+    <link rel="stylesheet" href="css/sidebar-style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <aside>
+        <a href="#" data-resize-btn class="logo">
+            <img src="./images/Logo.svg" alt="">
+
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./dashboard.html" >
+                        <img src="./images/home.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Users.html" class="active">
+                        <img src="./images/performence-overview.svg" alt="">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/calendar.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/book.svg" alt="">
+                        <span>Slideshow</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/task.svg" alt="">
+                        <span>Messages</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/learning.svg" alt="">
+                        <span>Collections</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/settings.svg" alt="">
+                        <span>Downloads</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="top-bar">
+            <div class="tab-left-side">
+                <div class="page-name">
+                    <h6>Users</h6>
+                </div>
+            </div>
+
+
+            <div class="user-notificationbell">
+                <div class="search-input-div">
+                    <input type="search" placeholder="search" class="search-input">
+                    <img src="./images/Search_Magnifying_Glass.svg" alt="" class="search-img">
+                </div>
+                <div class="notification-bell">
+                    <img src="images/share.svg" alt="">
+                </div>
+
+                <div class="user-img">
+                    <img src="images/notification.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="inner-content">
+
+            <div class="dashboard-number-row">
+                <div class="num-box custom-div">
+                    <div class="icon-heading">
+                        <div class="num-heading">
+                            <h6>Total Users</h6>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h4>240</h4>
+                    </div>
+                </div>
+
+                <div class="num-box custom-div">
+                    <div class="icon-heading">
+                        <div class="num-heading">
+                            <h6>Active Users</h6>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h4>200</h4>
+                    </div>
+                </div>
+
+
+
+                <div class="num-box custom-div">
+                    <div class="icon-heading">
+                        <div class="num-heading">
+                            <h6>Inactive Users</h6>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h4>40</h4>
+                    </div>
+                </div>
+
+                <div class="num-box custom-div">
+                    <div class="icon-heading">
+                        <div class="num-heading">
+                            <h6>Blocked</h6>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h4>3</h4>
+                    </div>
+                </div>
+
+                <div class="num-box custom-div">
+                    <div class="icon-heading">
+                        <div class="num-heading">
+                            <h6>Pending Users</h6>
+                        </div>
+                    </div>
+
+                    <div class="number">
+                        <h4>7</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="users-list">
+                <div class="box-top-bar">
+                    <div class="top-bar-left">
+                        <div class="icon">
+                            <img src="./images/total-users.svg" alt="">
+                        </div>
+                        <h6>Users</h6>
+                    </div>
+
+                    <div class="top-bar-right users-right">
+                        <div class="search-input-div">
+                            <input type="search" placeholder="search" class="search-input">
+                            <img src="./images/Search_Magnifying_Glass.svg" alt="" class="search-img">
+                        </div>
+
+                        <div class="filter-report">
+                            <div class="create-report">
+                                <button type="button" class="filter-btn"><img src="./images/Filter.svg" alt="">Filter</button>
+                            </div>
+        
+                            <div class="create-report-red">
+                                <button type="button" class="red-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Users</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Role</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Access</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Admin</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="active-user">Active</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>RSM</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="inactive-user">Inactive</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>TL</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="blocked-user">Blocked</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>So</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="pending-user">Pending</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Admin</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="active-user">Active</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>RSM</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="inactive-user">Inactive</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>TL</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="blocked-user">Blocked</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>So</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="pending-user">Pending</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Admin</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="active-user">Active</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>RSM</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="inactive-user">Inactive</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>TL</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="blocked-user">Blocked</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>John Doe</td>
+                            <td>So</td>
+                            <td>firstname@email.com</td>
+                            <td>
+                                <span class="pending-user">Pending</span>
+                            </td>
+                            <td>Full</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <img src="./images/cancel.svg" alt="">
+                                    <img src="./images/edit.svg" alt="">
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                    <div class="box-top-bar">
+                        <div class="top-bar-left">
+                            <div class="icon">
+                                <img src="./images/add-user.svg" alt="">
+                            </div>
+                            <h6>Add a User</h6>
+                        </div>
+    
+                        <div class="top-bar-right users-right">
+                            <span>Manage</span>
+                        </div>
+                    </div>
+                    <div class="form-input-label">
+                        <label for="">Email(s)</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-input-label">
+                        <label for="">Assign Role</label>
+                        <select name="" id="">
+                            <option value="">Admin</option>
+                            <option value="">RSM</option>
+                            <option value="">TL</option>
+                            <option value="">SO</option>
+                        </select>
+                    </div>
+
+                    <div class="form-input-label">
+                        <label for="">Access</label>
+                        <select name="" id="">
+                            <option value="">Full</option>
+                            <option value="">RSM</option>
+                        </select>
+                    </div>
+
+                    <div class="below-btn d-flex justify-content-end gap-3">
+                        <button type="button" class="red-btn d-flex align-items-center gap-1"> <span>Add</span></button>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        <!-- MODAL END -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const targetDatamonth = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [75, 25],
+                backgroundColor: [
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 3,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountmonth = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsmonth = {
+            id: 'targetcountsmonth',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('82%', xCoor, yCoor);
+            }
+        }
+
+        const configTargetmonth = {
+            type: 'doughnut',
+            data: targetDatamonth,
+            options: targetcountmonth,
+            plugins: [targetcountsmonth]
+
+
+        };
+
+        const targetmonth = new Chart(
+            document.getElementById('targetmonth'),
+            configTargetmonth
+        );
+
+
+    </script>
+
+    <script>
+        const targetDataquarter = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [75, 25],
+                backgroundColor: [
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 3,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountquarter = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsquarter = {
+            id: 'targetcountsquarter',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('20%', xCoor, yCoor);
+            }
+        }
+
+        const configTargetquarter = {
+            type: 'doughnut',
+            data: targetDataquarter,
+            options: targetcountquarter,
+            plugins: [targetcountsquarter]
+
+
+        };
+
+        const targetquarter = new Chart(
+            document.getElementById('targetquarter'),
+            configTargetquarter
+        );
+
+
+    </script>
+
+    <script>
+        const targetDatayear = {
+            datasets: [{
+                label: 'My First Dataset',
+                data: [75, 25],
+                backgroundColor: [
+                    'rgba(74, 175, 217, 1)',
+                    'rgba(27, 101, 166, 1)'
+                ],
+                // hoverOffset: 4,
+                borderWidth: 3,
+                borderRadius: 8
+            }]
+        };
+
+        const targetcountyear = {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    display: false
+                }
+            }
+        };
+
+        const targetcountsyear = {
+            id: 'targetcountsyear',
+            beforeDatasetsDraw(chart, args, pluginOptions) {
+                const { ctx, data } = chart;
+                ctx.save();
+
+                const xCoor = chart.getDatasetMeta(0).data[0].x;
+                const yCoor = chart.getDatasetMeta(0).data[0].y;
+                ctx.font = 'bold 16px Inter';
+                ctx.fillStyle = '#151A24';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle',
+                    ctx.fillText('75%', xCoor, yCoor);
+            }
+        }
+
+        const configTargetyear = {
+            type: 'doughnut',
+            data: targetDatayear,
+            options: targetcountyear,
+            plugins: [targetcountsyear]
+
+
+        };
+
+        const targetyear = new Chart(
+            document.getElementById('targetyear'),
+            configTargetyear
+        );
+
+
+    </script>
+
+    <script>
+        // Sample datasets
+        const kpitrendmonthdata = {
+            kpitrendmonth1: [
+                { label: "Login", data: [5, 30, 25, 20], borderColor: "rgba(27, 101, 166, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiMonthgraph = document.getElementById("mykpiMonthgraph").getContext("2d");
+        let chart = new Chart(mykpiMonthgraph, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendmonthdata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        ticks: {
+                            display: false // Hides only the labels of the x-axis 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        });
+
+        // Event listener to change dataset
+        document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+            const selectedDataset = this.value;
+            chart.data.datasets = kpitrendmonthdata[selectedDataset];
+            chart.update();
+        });
+    </script>
+
+    <script>
+        // Sample datasets
+        const kpitrendquarterdata = {
+            kpitrendmonth1: [
+                { label: "Login", data: [5, 3, 25, 20], borderColor: "rgba(27, 101, 166, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiquarter = document.getElementById("mykpiquarter").getContext("2d");
+        let chartquarter = new Chart(mykpiquarter, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendquarterdata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        ticks: {
+                            display: false // Hides only the labels of the x-axis 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        });
+
+        // Event listener to change dataset
+        document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+            const selectedDataset = this.value;
+            chartquarter.data.datasets = kpitrendmonthdata[selectedDataset];
+            chartquarter.update();
+        });
+    </script>
+
+    <script>
+        // Sample datasets
+        const kpitrendyeardata = {
+            kpitrendmonth1: [
+                { label: "Login", data: [5, 15, 5, 20], borderColor: "rgba(27, 101, 166, 1)" }
+            ]
+        };
+
+        // Chart initialization
+        const mykpiyear = document.getElementById("mykpiyear").getContext("2d");
+        let chartyear = new Chart(mykpiyear, {
+            type: "line",
+            data: {
+                labels: ["week 1", "week 2", "week 3", "week 4"],
+                datasets: kpitrendyeardata.kpitrendmonth1
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        grid: {
+                            drawOnChartArea: false
+                        },
+                        ticks: {
+                            display: false // Hides only the labels of the x-axis 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        });
+
+        // Event listener to change dataset
+        document.getElementById("KpiTrendmonthselect").addEventListener("change", function () {
+            const selectedDataset = this.value;
+            chartyear.data.datasets = kpitrendmonthdata[selectedDataset];
+            chartyear.update();
+        });
+    </script>
+
+    <script>
+        const resizeBtn = document.querySelector("[data-resize-btn]");
+
+        resizeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.body.classList.toggle("sb-expanded");
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
